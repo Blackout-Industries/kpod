@@ -2,6 +2,8 @@
 
 A browser-based visual editor for Kubernetes Network Policies and Cilium Network Policies. Build, visualize, and export network policies without writing YAML by hand.
 
+![](docs/image.png)
+
 Inspired by [editor.networkpolicy.io](https://editor.networkpolicy.io).
 
 ## Features
