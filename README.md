@@ -2,6 +2,8 @@
 
 [![CI](https://github.com/Blackout-Industries/kpod/actions/workflows/ci.yml/badge.svg)](https://github.com/Blackout-Industries/kpod/actions/workflows/ci.yml)
 [![Deploy](https://github.com/Blackout-Industries/kpod/actions/workflows/pages.yml/badge.svg)](https://github.com/Blackout-Industries/kpod/actions/workflows/pages.yml)
+[![CodeQL](https://github.com/Blackout-Industries/kpod/actions/workflows/codeql.yml/badge.svg)](https://github.com/Blackout-Industries/kpod/actions/workflows/codeql.yml)
+[![Trivy](https://github.com/Blackout-Industries/kpod/actions/workflows/trivy.yml/badge.svg)](https://github.com/Blackout-Industries/kpod/actions/workflows/trivy.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
