@@ -4,7 +4,7 @@ WORKDIR /app
 # ── Development stage ──
 FROM base AS dev
 COPY package.json package-lock.json ./
-RUN npm ci
+RUN rm -f package-lock.json && npm install --no-audit --no-fund
 COPY . .
 EXPOSE 5173
 CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
@@ -12,7 +12,8 @@ CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
 # ── Build stage ──
 FROM base AS build
 COPY package.json package-lock.json ./
-RUN npm ci
+# Drop lockfile to bypass npm/cli#4828 (missing platform-specific rollup binary).
+RUN rm -f package-lock.json && npm install --no-audit --no-fund
 COPY . .
 # Skip tsc -b until pre-existing type errors are cleaned up; vite build is sufficient for the bundle.
 RUN npx vite build
