@@ -5,6 +5,9 @@ import path from 'path'
 
 export default defineConfig({
   base: process.env.GITHUB_PAGES ? '/kpod/' : '/',
+  define: {
+    __APP_VERSION__: JSON.stringify(process.env.APP_VERSION ?? 'dev'),
+  },
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {

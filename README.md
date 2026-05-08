@@ -112,6 +112,21 @@ src/
 
 *Coming soon*
 
+## Versioning
+
+Versions follow [SemVer](https://semver.org) (`X.Y.Z`) and are computed automatically by [GitVersion](https://gitversion.net) on every push to `main`. Each push creates a `vX.Y.Z` git tag and a GitHub release.
+
+The default bump is **patch**. Override per-commit with a footer in the message:
+
+```text
++semver: major   # or breaking — bumps X
++semver: minor   # or feature  — bumps Y
++semver: patch   # or fix      — bumps Z (default)
++semver: none    # or skip     — no bump
+```
+
+The computed version is also passed to the Vite build as `APP_VERSION` and is available in code as `__APP_VERSION__`.
+
 ## License
 
 [MIT](LICENSE)
