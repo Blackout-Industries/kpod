@@ -106,6 +106,20 @@ html, body, #root {
   overflow: hidden;
 }
 
+input, textarea, select {
+  color: var(--theme-input-text);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--theme-text-secondary);
+  opacity: 1;
+}
+
+select option {
+  color: var(--theme-text-primary);
+  background: var(--theme-surface);
+}
+
 /* ── Synthwave glow effects (dark mode only) ── */
 [data-theme="dark"] .glow-card,
 :root:not([data-theme="light"]) .glow-card {
