@@ -1,8 +1,15 @@
 # Network Policy Editor
 
+[![CI](https://github.com/Blackout-Industries/kpod/actions/workflows/ci.yml/badge.svg)](https://github.com/Blackout-Industries/kpod/actions/workflows/ci.yml)
+[![Deploy](https://github.com/Blackout-Industries/kpod/actions/workflows/pages.yml/badge.svg)](https://github.com/Blackout-Industries/kpod/actions/workflows/pages.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
 A browser-based visual editor for Kubernetes Network Policies and Cilium Network Policies. Build, visualize, and export network policies without writing YAML by hand.
 
-![](docs/image.png)
+**🚀 [Live demo](https://blackout-industries.github.io/kpod/)**
+
+![Network Policy Editor screenshot](docs/image.png)
 
 Inspired by [editor.networkpolicy.io](https://editor.networkpolicy.io).
 
