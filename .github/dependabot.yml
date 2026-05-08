@@ -1,4 +1,5 @@
 version: 2
+# Updated to re-scan dependencies after main was force-pushed.
 updates:
   - package-ecosystem: npm
     directory: /
